@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Example</title>
+    <link rel="stylesheet" href="./../dist/output.css"> <!-- Ensure Tailwind CSS is linked properly -->
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+      <!-- navbar -->
+      <nav class="fixed z-50 bg-white w-full top-0 start-0">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-6">
+          <a href="#" class="flex items-center space-x-3">
+            <img src="./images/imgs/Logo.png" alt="Logo" class="h-10">
+          </a>
+      
+          <!-- Hamburger Menu -->
+          <button data-collapse-toggle="navbar-sticky" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+            </svg>
+          </button>
+      
+          <!-- Menu Items -->
+          <div class="hidden w-full md:flex md:items-center md:w-auto" id="navbar-sticky">
+            <ul class="flex flex-col md:flex-row md:space-x-8 text-2xl font-medium">
+              <li><a href="#" class="block py-2 px-3 text-customGray hover:text-blue-700">Home</a></li>
+              <li><a href="#" class="block py-2 px-3 text-customGray hover:text-blue-700">Services</a></li>
+              <li><a href="#" class="block py-2 px-3 text-customGray hover:text-blue-700">Contact</a></li>
+              <li><a href="#" class="block py-2 px-3 text-customGray hover:text-blue-700">Support</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      
+  
+      <!-- interior design -->
+
+      <section class="pt-20 px-10  md:pt-20 mt:20">
+        <div class="container py-20 flex flex-col lg:flex-row">
+          
+          <div class="lg:w-2/3 mb-8 lg:mb-0">
+            <h1 class="text-4xl lg:text-8xl pb-6 font-semibold">Interior Design</h1>
+            <p class="text-base lg:text-lg lg:w-7/12 text-customGray">
+              Step into a world where the art of Interior Design is meticulously crafted to bring together timeless elegance and cutting-edge modern Innovation, allowing you to transform your living spaces into the epitome of luxury and sophistication.
+            </p>
+          </div>
+          
+          <div class="lg:w-1/3">
+            <img src="./images/imgs/Image 1.png" alt="Interior Design Image">
+          </div>
+          
+        </div>
+      </section>
+      
+<!-- start project -->
+<section class="flex flex-col lg:flex-row">
+  <div class="lg:w-1/2 flex flex-col justify-around px-10">
+    <div>
+      <button class="bg-gray-900 text-white text-2xl py-2 px-4">Start Project</button>
+    </div>
+    <div class="flex flex-wrap gap-8 w-full text-customGray">
+      <div>
+        <p class="text-4xl lg:text-6xl font-semibold">400 +</p>
+        <p class="text-xl lg:text-2xl pt-4">Projects Complete</p>
+      </div>
+      <div>
+        <p class="text-4xl lg:text-6xl font-semibold">600 +</p>
+        <p class="text-xl lg:text-2xl pt-4">Satisfied Clients</p>
+      </div>
+      <div>
+        <p class="text-4xl lg:text-6xl font-semibold">100 +</p>
+        <p class="text-xl lg:text-2xl pt-4">Unique Styles</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="lg:w-1/2">
+    <img src="./images/imgs/Image 2.png" alt="">
+  </div>
+</section>
+
+
+<!-- our sevices -->
+<section>
+  <div class="container mx-auto px-4 pt-20">
+    <h1 class="text-4xl md:text-6xl pb-8 font-semibold text-center">Our Services</h1>
+
+    <div class="flex flex-col md:flex-row gap-8 justify-center">
+
+        <!-- Service 1 -->
+        <div class="w-full md:w-1/3 bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+            <img src="./images/imgs/Lighting design icon.png" alt="Lighting Design" class="w-20 h-20 mx-auto mb-4">
+            <h2 class="text-2xl font-semibold mb-2">Lighting Design</h2>
+            <p class="text-gray-600 w-10/12 mx-auto">Achieve the perfect balance of ambient, task, and accent lighting for a functional atmosphere.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="w-full md:w-1/3 bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+            <img src="./images/imgs/Interior design icon.png" alt="Interior Design" class="w-20 h-20 mx-auto mb-4">
+            <h2 class="text-2xl font-semibold mb-2">Interior Design</h2>
+            <p class="text-gray-600 w-10/12 mx-auto">From concept to completion, we oversee every detail to bring your vision to life efficiently.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="w-full md:w-1/3 bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition-shadow">
+            <img src="./images/imgs/Outdoor design icon.png" alt="Outdoor Design" class="w-20 h-20 mx-auto mb-4">
+            <h2 class="text-2xl font-semibold mb-2">Outdoor Design</h2>
+            <p class="text-gray-600 w-10/12 mx-auto">Celebrate the changing seasons with our seasonal outdoor decor services.</p>
+        </div>
+
+    </div>
+</div>
+</section>
+
+<section class="pt-10">
+  <div class="container flex flex-col md:flex-row gap-10 p-10">
+    <!-- Image Section -->
+    <div class="dream-img w-full md:w-1/2 mb-10 md:mb-0">
+      <img src="./images/imgs/Mask group (5).png" alt="Dream Design" class="w-full h-auto rounded-lg">
+    </div>
+
+    <!-- Text Content Section -->
+    <div class="dream w-full md:w-1/2">
+      <h1 class="text-4xl md:text-5xl font-semibold mb-6">Designing Your Dream With Brilliance</h1>
+      <p class="text-gray-600 mb-4 text-2xl md:text-3xl">Elevate your spaces with bespoke interior designs that reflect your unique style and aspirations. Crafted with precision and brilliance, we create an unforgettable living experience.</p>
+      
+      <!-- Service Items -->
+      <div class="pt-6">
+        <div class="living flex justify-between items-center pb-4">
+          <p class="font-semibold text-xl md:text-2xl">Living Room Interior Design</p>
+          <span class="text-5xl md:text-6xl font-thin">+</span>
+        </div>
+        <div class="w-full h-0.5 bg-gray-300"></div>
+
+        <div class="commical flex justify-between items-center pt-6 pb-4">
+          <p class="font-semibold text-xl md:text-2xl">Commercial Office Room Interior Design</p>
+          <span class="text-5xl md:text-6xl font-thin">+</span>
+        </div>
+        <div class="w-full h-0.5 bg-gray-300"></div>
+      </div>
+      
+      <!-- Button -->
+      <div class="pt-6">
+        <button class="bg-slate-950 text-white text-xl md:text-2xl px-6 md:px-8 py-3 md:py-4 rounded-md">Learn More</button>
+      </div>    
+    </div>
+  </div>
+</section>
+
+
+
+<!-- simple steps -->
+<section class="p-10">
+  <div class="container mx-auto flex flex-col md:flex-row items-center gap-10">
+
+    
+    <div class="dream w-full md:w-1/2 relative pl-20 ml-10" >
+      <h1 class="text-5xl font-bold mb-6 pb-10">Designing Your Dream in Three Simple Steps</h1>
+      
+      
+      <div class="mb-4  ">
+        <h2 class="text-2xl font-bold mb-2">Start Project</h2>
+        <p class="text-gray-600 text-2xl">Embark on your design adventure by initiating your project. Share your vision and set the stage for a bespoke design experience.</p>
+      </div>
+
+      
+      <div class="mb-4">
+        <h2 class="text-2xl font-bold mb-2">Craft</h2>
+        <p class="text-gray-600 text-2xl">Collaborate closely to achieve design excellence, refining your vision and crafting brilliance into every aspect of your space.</p>
+      </div>
+
+     
+      <div class="mb-4">
+        <h2 class="text-2xl font-bold mb-2">Execute</h2>
+        <p class="text-gray-600 text-2xl">Witness your vision becoming a reality as we execute the design plan with precision. Celebrate the joy of your newly transformed space.</p>
+      </div>
+
+      
+      <div class="mt-6">
+        <img src="./images/imgs/Step 1 icon.png" alt="Step 1" class="w-16 h-16">
+      </div>
+    </div>
+
+    
+    <div class="dream-img w-full md:w-1/2">
+      <img src="./images/imgs/Image.png" alt="Dream Design" class="w-full h-auto rounded-lg shadow-lg">
+    </div>
+
+  <!-- icons  -->
+  <div class="icons absolute md: -translate-y-10 left-20 ">
+    <div class="">
+      <div class="mb-2">
+        <img src="./images/imgs/Step 1 icon.png" class="bg-slate-950 p-4 rounded-full " alt="Step 1 icon">
+      </div>
+      <div class=" m-auto w-0.5 h-20 bg-gray-300 right-2-2"></div>
+
+    </div>
+
+    <div class="">
+      <div class="mb-2">
+        <img src="./images/imgs/Mask group.png" class="bg-slate-950 p-4 rounded-full " alt="Step 1 icon">
+      </div>
+      <div class=" m-auto w-0.5 h-20 bg-gray-300 right-2-2"></div>
+
+    </div>
+
+    <div class="">
+      <div class="mb-2">
+        <img src="./images/imgs/Step 3 icon.png" class="bg-slate-950 p-4 rounded-full " alt="Step 1 icon">
+      </div>
+      
+
+    </div>
+  </div>
+
+
+  </div>
+
+
+</section>
+
+<!-- say -->
+<section class="py-20 m-5 md:m-20 relative">
+  <h1 class="text-4xl md:text-6xl font-semibold text-center mb-10">What Our Customers Say About Us</h1>
+  
+  <div class="flex flex-col items-center md:flex-row md:justify-between">
+    <div class="w-full md:w-1/3 pt-0">
+      <img src="./images/imgs/Mask group (1).png" class="w-full h-auto" alt="Decorative Image">
+    </div>
+
+    <div class="w-full md:w-2/3 flex flex-col space-y-6 mt-10 md:mt-0">
+      
+      <div class="flex flex-col bg-slate-950 text-white p-6 rounded-lg">
+        <img src="./images/imgs/“.png" class="w-20 py-2 mb-4" alt="Icon"> <!-- Ensure to replace icon.png with actual icon path -->
+        <p class="text-white text-lg md:text-2xl">Working with your design team was an absolute pleasure...</p>
+        
+        <div class="flex items-center pt-4 mt-4">
+          <img src="./images/imgs/image 17.png" class="rounded-full w-12 h-12 p-2" alt="Sophie Carter">
+          <div class="p-2">
+            <p class="font-semibold">Sophie Carter</p>
+            <span class="text-gray-400">New York, USA</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col bg-slate-950 text-white p-6 rounded-lg">
+        <img src="./images/imgs/“.png" class="w-20 py-2 mb-4" alt="Icon"> <!-- Ensure to replace icon.png with actual icon path -->
+        <p class="text-white text-lg md:text-2xl">The attention to detail and creativity exceeded my expectations...</p>
+        
+        <div class="flex items-center pt-4 mt-4">
+          <img src="./images/imgs/Mask group (2).png" class="rounded-full w-12 h-12 p-2" alt="Sophie Carter">
+          <div class="p-2">
+            <p class="font-semibold">Sophie Carter</p>
+            <span class="text-gray-400">New York, USA</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+ 
+<!-- subscribe -->
+
+<section class="m-10 pt-32 pb-20 text-center mx-auto max-w-2xl bg-slate-50">
+  <h1 class="text-3xl md:text-4xl font-semibold mb-4">Subscribe to Our Newsletter for Design Insights</h1>
+  <p class="text-gray-600 text-lg md:text-xl mb-8">Be the first to discover trends, inspirations, and special offers as we bring the world of design directly to your inbox.</p>
+</section>
+
+
+<!-- footer -->
+  
+<footer class="mt-20">
+  <div class="flex flex-col lg:flex-row justify-between gap-8 bg-slate-950 text-white mx-auto relative p-10 lg:p-40">
+   
+    <div class="absolute left-1/2 top-0 transform -translate-x-1/2 -translate-y-1/2 flex justify-center bg-white w-full max-w-xs">
+      <input class="py-2 px-4 border border-gray-400 w-full" type="email" placeholder="Enter your email address">
+      <button type="button" class="bg-gray-900 text-white text-xl py-2 px-6">Sign Up</button>
+    </div>
+
+    <div class="log w-full text-center lg:text-left">
+      <img src="./images/imgs/Logo.png" alt="Logo" class="mx-auto lg:mx-0">
+      <p class="py-6 w-full lg:w-40">VivaDecyor your premier destination for luxury and modern interior design</p>
+      <ul class="flex justify-center lg:justify-start space-x-4">
+        <li><i class="fa-brands fa-facebook"></i></li>
+        <li><i class="fa-brands fa-twitter"></i></li>
+        <li><i class="fa-brands fa-instagram"></i></li>
+        <li><i class="fa-brands fa-linkedin"></i></li>
+      </ul>
+    </div>
+    
+    <div class="services w-full lg:w-1/5">
+      <h1 class="py-6 text-center lg:text-left">Our Services</h1>
+      <ul class="space-y-2 text-center lg:text-left">
+        <li>Interior design</li>
+        <li>Outdoor design</li>
+        <li>Lighting design</li>
+        <li>Office design</li>
+      </ul>
+    </div>
+
+    <div class="services w-full lg:w-1/5">
+      <h1 class="py-6 text-center lg:text-left">Company</h1>
+      <ul class="space-y-2 text-center lg:text-left">
+        <li>Reviews</li>
+        <li>Careers</li>
+        <li>Pricing</li>
+        <li>Press inquiries</li>
+      </ul>
+    </div>
+
+    <div class="services w-full lg:w-1/5">
+      <h1 class="py-6 text-center lg:text-left">Contact</h1>
+      <ul class="space-y-6 text-center lg:text-left">
+        <li>info@vivadecor.com</li>
+        <li>Design Avenue, Cityville, CA 90210, USA</li>
+      </ul>
+    </div>
+    
+  </div>
+</footer>
+
+
+
+ 
+
+</body>
+</html
